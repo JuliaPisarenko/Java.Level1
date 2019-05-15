@@ -33,13 +33,12 @@ public class Words {
 
     public static boolean checkPassword(String password){
 
-        if ( password!=null && password.length()>=8 && password.length()<=20
-                && password.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[()_@#$%]).{8,}")) {
+        if ( password!=null && password.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[()_@#$%]).{8,20}")) {
             System.out.println("Пароль действительный");
             return true;
         } else
             System.out.println("Пароль должен содержать маленькие и заглавные буквы, цыфры и спецсимволы, длина пароля от 8ми до 20ти символов");
-        return false;
+            return false;
     }
 }
 
