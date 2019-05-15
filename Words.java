@@ -33,7 +33,7 @@ public class Words {
 
     public static boolean checkPassword(String password){
 
-        if ( password!=null && password.length()>=8&& password.length()<=20
+        if ( password!=null && password.length()>=8 && password.length()<=20
                 && password.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[()_@#$%]).{8,}")) {
             System.out.println("Пароль действительный");
             return true;
