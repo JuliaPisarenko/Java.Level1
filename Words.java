@@ -17,6 +17,25 @@ public class Words {
             words_counter.put(word_lowerCase, count == null? 1 : count +1);
         }
         System.out.println(words_counter);
+        
+        System.out.println("\nПроверка пароля:\n");
+
+        checkPassword("Ds1231232&@34");
+        checkPassword("s1231232&@34");
+        checkPassword("%S&sdfsSDF32&@34");
+        checkPassword("25555)))%%%");
+    }
+    
+    public static boolean checkPassword(String password){
+
+        if ( password!=null && password.length()>=8&& password.length()<=20
+                && password.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[()_@#$%]).{8,}")) {
+            System.out.println("Пароль действительный");
+            return true;
+
+        } else
+            System.out.println("Пароль должен содержать маленькие и заглавные буквы, цыфры и спецсимволы, длина пароля от 8ми до 20ти символов");
+        return false;
     }
 }
 
