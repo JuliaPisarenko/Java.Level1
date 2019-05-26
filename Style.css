@@ -1,0 +1,45 @@
+
+#textArea{
+    -fx-background-image: url(Background.jpg);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Book Antiqua Italic";
+    -fx-font-size: 16;
+  }
+#textField{
+    -fx-prompt-text-fill: #1E90FF;
+}
+ .scroll-pane  {
+    -fx-background-color: transparent;
+}
+.scroll-bar  {
+    -fx-background-color: linear-gradient(#1E90FF, #F0F8FF);
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+.label {
+
+    -fx-background-color: purple;
+    -fx-text-fill: white;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 200px;
+}
+
+#sendBtn {
+    -fx-text-fill: #00008B;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian,#fff,8,0.7,0,0);
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 13;
+    -fx-background-color: linear-gradient(#1E90FF, #F0F8FF);
+}
+
+#sendBtn:hover {
+    -fx-background-color:  lightblue;
+}
+
